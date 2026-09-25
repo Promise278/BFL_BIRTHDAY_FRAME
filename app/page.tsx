@@ -173,22 +173,22 @@ export default function FrameGenerator() {
     <div className="min-h-screen bg-[#F9FBFD] text-slate-900 font-sans flex flex-col">
       <header className="w-full py-6 px-6 md:px-12 lg:px-24 xl:px-40 flex items-center justify-start bg-white border-b border-slate-100">
         <div className="flex items-center gap-3">
-          <img src="/assets/logo.webp" alt="Logo" className="h-12 w-12 rounded-full object-contain shadow-sm" />
+          <img src="/assets/logo.webp" alt="Logo" className="h-10 w-10 md:h-12 md:w-12 rounded-full object-contain shadow-sm" />
           <div className="flex flex-col leading-tight">
             <div className="flex items-center gap-1">
-              <span className="text-lg font-bold tracking-tight text-slate-900 uppercase">BLOCKFUSE</span>
-              <span className="text-lg font-light tracking-tight text-slate-500 uppercase">Frames</span>
+              <span className="text-base md:text-lg font-bold tracking-tight text-slate-900 uppercase">BLOCKFUSE</span>
+              <span className="text-base md:text-lg font-light tracking-tight text-slate-500 uppercase">Frames</span>
             </div>
-            <span className="text-[9px] uppercase tracking-[0.2em] text-slate-400 font-bold">BLOCKFUSE BIRTHDAY</span>
+            <span className="text-[8px] md:text-[9px] uppercase tracking-[0.2em] text-slate-400 font-bold">BLOCKFUSE BIRTHDAY</span>
           </div >
         </div >
       </header>
 
       <div className="flex-1 flex flex-col items-center py-16 px-4">
         <div className="text-center max-w-2xl mb-16">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 leading-tight text-[#052F54] text-center">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 leading-tight text-[#052F54] text-center px-2">
             Create your <span
-              className="font-black tracking-tighter block sm:inline"
+              className="font-black tracking-tighter block sm:inline text-2xl xs:text-3xl sm:text-4xl md:text-5xl"
               style={{
                 fontFamily: 'Arial, Helvetica, sans-serif',
                 fontWeight: 900,
@@ -341,11 +341,12 @@ export default function FrameGenerator() {
 
             <button
               onClick={download}
-              className="w-full mt-12 bg-[#ca92f8] text-white font-bold py-5 rounded-lg hover:bg-[#775c7e] transition-all flex items-center justify-center gap-3 text-lg shadow-xl active:scale-95"
+              className="w-full mt-12 bg-[#ca92f8] text-white font-bold py-4 md:py-5 rounded-lg hover:bg-[#775c7e] transition-all flex items-center justify-center gap-2 md:gap-3 text-sm sm:text-base md:text-lg shadow-xl active:scale-95 px-4"
             >
-              <span className="flex items-center gap-4">
-                <img src="/assets/logo.webp" className="h-9" alt="logo" /> Generate My Blockfuse Frame
-              </span>
+              <div className="flex items-center justify-center gap-2 md:gap-3">
+                <img src="/assets/logo.webp" className="h-6 md:h-9 w-6 md:w-9" alt="logo" />
+                <span className="text-center leading-tight">Generate My Blockfuse Frame</span>
+              </div>
             </button>
           </div>
 
