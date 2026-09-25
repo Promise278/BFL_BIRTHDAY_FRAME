@@ -220,8 +220,7 @@ export default function FrameGenerator() {
                 letterSpacing: '-0.05em',
                 color: '#f8fafc',
                 WebkitTextStroke: '1.5px #0b3154',
-                textStroke: '1.5px #0b3154',
-              }}
+              } as React.CSSProperties}
             >
               Blockfuse Birthday
             </span> frame in seconds!
